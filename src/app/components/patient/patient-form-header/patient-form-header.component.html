@@ -1,1 +1,25 @@
-<p>patient-form-header works!</p>
+<header id="header" class="container-xxl">
+  <!-- Left side -->
+  <div id="header-wrapper" class="p-4 w-100 d-flex align-items-center">
+    <div
+      class="header--left-side p-5 w-50 d-flex justify-content-start align-items-center"
+    >
+      <img src="../../../../assets/images/cruz-hospitalar.png" class="me-5" />
+      <h1>Hospital Santa Clara</h1>
+    </div>
+    <!-- Right Side -->
+    <div
+      class="header-right-side p5 w-50 d-flex justify-content-end align-items-end"
+    >
+      <h3 id="dynamic-clock">
+        {{ dynamicClockHours }}:{{ dynamicClockMinutes }}:{{
+          dynamicClockSeconds
+        }}
+      </h3>
+    </div>
+  </div>
+  <div class="button-wrapper p-5 d-flex justify-content-start">
+    <button class="me-5 button button-enabled">Cadastrar Novo Paciente</button>
+    <button class="button button-disabled" disabled>Limpar Formulário</button>
+  </div>
+</header>
