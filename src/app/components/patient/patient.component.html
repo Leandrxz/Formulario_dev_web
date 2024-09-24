@@ -1,2 +1,4 @@
-<app-patient-form-header></app-patient-form-header>
+<app-patient-form-header (toggle)="toggleForm()"></app-patient-form-header>
+@if (showForm) {
 <app-patient-form></app-patient-form>
+}

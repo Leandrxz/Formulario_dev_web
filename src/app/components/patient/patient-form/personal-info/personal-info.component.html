@@ -1,1 +1,61 @@
-<p>personal-info works!</p>
+<div class="contact-info">
+  <h2>Informação para Contato</h2>
+
+  <form>
+    <div class="name-dob-section mb-5">
+      <label for="fullName">Nome Completo:</label>
+      <input type="text" id="fullName" name="fullName" required class="me-5" />
+
+      <label for="dob">Data de Nascimento:</label>
+      <input type="date" id="dob" name="dob" required />
+    </div>
+
+    <div class="address-section">
+      <label for="address">Endereço:</label>
+      <input type="text" id="address" name="address" required />
+
+      <label for="zip">CEP:</label>
+      <input
+        type="text"
+        id="zip"
+        name="zip"
+        pattern="\d{5}-\d{3}"
+        placeholder="00000-000"
+        required
+      />
+      <br />
+      <div class="mb-3"></div>
+      <label for="city">Cidade:</label>
+      <input type="text" id="city" name="city" required />
+
+      <label for="state">Estado:</label>
+      <input type="text" id="state" name="state" required />
+    </div>
+
+    <div class="contacts-section">
+      <label for="phoneMobile">Telefone Móvel:</label>
+      <input
+        type="tel"
+        id="phoneMobile"
+        name="phoneMobile"
+        placeholder="(00) 00000-0000"
+        pattern="\(\d{2}\) \d{5}-\d{4}"
+        maxlength="15"
+        required
+      />
+
+      <label for="phoneHome">Telefone Residencial:</label>
+      <input
+        type="tel"
+        id="phoneHome"
+        name="phoneHome"
+        placeholder="(00) 0000-0000"
+        pattern="\(\d{2}\) \d{4}-\d{4}"
+        maxlength="15"
+      />
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+  </form>
+</div>

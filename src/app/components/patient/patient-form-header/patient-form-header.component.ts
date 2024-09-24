@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-patient-form-header',
@@ -8,10 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './patient-form-header.component.scss',
 })
 export class PatientFormHeaderComponent {
+  @Output() toggle = new EventEmitter<void>();
+
   public dynamicClockTime: string = '';
   public currentDate: string = '';
 
-  public formDisabled = true;
+  /**
+   * This function emites an event to check when the button the add a new patient is clicked to open the form
+   */
+  onButtonClick() {
+    this.toggle.emit();
+  }
 
   /**
    * This function creates a dynamic digital clock to be displayed in the form's header section
