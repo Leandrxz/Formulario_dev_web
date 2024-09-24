@@ -1,1 +1,55 @@
-<p>emergency-contact works!</p>
+<div class="emergency-contact">
+  <h2>Contato de Emergência</h2>
+
+  <form>
+    <div class="emergency-name-relation">
+      <label for="emergencyFullName">Nome Completo:</label>
+      <input
+        type="text"
+        id="emergencyFullName"
+        name="emergencyFullName"
+        required
+        class="me-5"
+      />
+
+      <label for="relation">Parentesco:</label>
+      <select id="relation" name="relation" required>
+        <option value="" disabled selected>Selecione...</option>
+        <option value="spouse">Cônjuge</option>
+        <option value="parent">Pai/Mãe</option>
+        <option value="sibling">Irmão/Irmã</option>
+        <option value="friend">Amigo(a)</option>
+        <option value="other">Outro</option>
+      </select>
+    </div>
+
+    <div class="emergency-contact-section">
+      <label for="emergencyPhoneMobile">Telefone Móvel:</label>
+      <input
+        type="tel"
+        id="emergencyPhoneMobile"
+        name="emergencyPhoneMobile"
+        placeholder="(00) 00000-0000"
+        pattern="\(\d{2}\) \d{5}-\d{4}"
+        maxlength="15"
+        class="me-5"
+        required
+      />
+
+      <label for="emergencyPhoneHome">Telefone Residencial:</label>
+      <input
+        type="tel"
+        id="emergencyPhoneHome"
+        name="emergencyPhoneHome"
+        placeholder="(00) 0000-0000"
+        pattern="\(\d{2}\) \d{4}-\d{4}"
+        maxlength="15"
+      />
+    </div>
+
+    <div class="emergency-email-section">
+      <label for="emergencyEmail">Email:</label>
+      <input type="email" id="emergencyEmail" name="emergencyEmail" required />
+    </div>
+  </form>
+</div>

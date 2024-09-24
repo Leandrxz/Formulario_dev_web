@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { EmergencyContactComponent } from './emergency-contact/emergency-contact.component';
 import { HealthInfoComponent } from './health-info/health-info.component';
 import { PersonalInfoComponent } from './personal-info/personal-info.component';
@@ -8,7 +7,6 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
   selector: 'app-patient-form',
   standalone: true,
   imports: [
-    ContactInfoComponent,
     EmergencyContactComponent,
     HealthInfoComponent,
     PersonalInfoComponent,

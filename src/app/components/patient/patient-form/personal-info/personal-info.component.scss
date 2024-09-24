@@ -22,12 +22,12 @@ form > div {
   &:not(:last-child) {
     margin-block-end: 3.6rem;
   }
-}
 
-form > div > label:not(:last-child) {
-  margin-inline-end: 1.6rem;
-}
+  & > label:not(:last-child) {
+    margin-inline-end: 1.6rem;
+  }
 
-form > div > input:not(:last-child) {
-  margin-inline-end: 2.4rem;
+  & > input:not(:last-child) {
+    margin-inline-end: 2.4rem;
+  }
 }

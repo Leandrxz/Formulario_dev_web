@@ -1,0 +1,61 @@
+.health-info {
+  margin-bottom: 5.6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-block-end: 3.6rem;
+  margin-block-start: 4.8rem;
+}
+
+label {
+  font-size: 1.8rem;
+}
+
+input,
+select {
+  width: 250px;
+  height: 38px;
+  font-size: 1.6rem;
+  padding: 0.4rem 1.6rem;
+  background-color: #f3f3f3;
+  border: 2px solid #7d7d7d;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  transform: scale(0.8);
+  margin-right: 0.8rem;
+}
+
+form > div {
+  &:not(:last-child) {
+    margin-block-end: 3.6rem;
+  }
+}
+
+form > div > label:not(:last-child) {
+  margin-inline-end: 1.6rem;
+}
+
+form > div > input:not(:last-child),
+form > div > select:not(:last-child) {
+  margin-inline-end: 2.4rem;
+}
+
+.allergies-options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  input[type="radio"] {
+    margin-right: 1rem;
+  }
+}
+
+.allergies-description {
+  margin-top: 1.2rem;
+  width: 250px;
+}

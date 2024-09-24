@@ -1,1 +1,78 @@
-<p>health-info works!</p>
+<div class="health-info">
+  <h2>Informações de Saúde</h2>
+
+  <form>
+    <div class="allergies-section mb-5">
+      <label>Alergias:</label>
+
+      <div class="allergies-options">
+        <label>
+          <input
+            type="radio"
+            name="allergies"
+            value="no"
+            (change)="toggleAllergiesInput('no')"
+          />
+          Não
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="allergies"
+            value="yes"
+            (change)="toggleAllergiesInput('yes')"
+          />
+          Sim, qual?
+        </label>
+
+        <!-- Field to fill if the option "Yes" was selected -->
+        @if(showAllergiesInput){
+        <input
+          type="text"
+          id="allergiesDescription"
+          name="allergiesDescription"
+          placeholder="Descreva as alergias"
+          class="allergies-description"
+        />
+        }
+      </div>
+    </div>
+
+    <div class="medications-section mb-5">
+      <label for="medications">Medicação Contínua:</label>
+      <input
+        type="text"
+        id="medications"
+        name="medications"
+        placeholder="Digite os medicamentos"
+        required
+      />
+    </div>
+
+    <div class="blood-type-section">
+      <label for="bloodType">Tipo Sanguíneo:</label>
+      <select id="bloodType" name="bloodType" required>
+        <option value="" disabled selected>Selecione...</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+      </select>
+    </div>
+
+    <div class="health-conditions-section">
+      <label for="healthConditions">Condições de Saúde:</label>
+      <input
+        type="text"
+        id="healthConditions"
+        name="healthConditions"
+        placeholder="Digite as condições"
+      />
+    </div>
+  </form>
+</div>
