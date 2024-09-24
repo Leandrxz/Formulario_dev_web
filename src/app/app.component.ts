@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PatientFormComponent } from './components/patient/patient-form/patient-form.component';
-import { PatientFormHeaderComponent } from './components/patient/patient-form-header/patient-form-header.component';
+import { PatientComponent } from './components/patient/patient.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PatientFormComponent, PatientFormHeaderComponent],
+  imports: [RouterOutlet, PatientComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

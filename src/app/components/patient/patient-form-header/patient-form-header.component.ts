@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './patient-form-header.component.scss',
 })
 export class PatientFormHeaderComponent {
-  public dynamicClockHours: string = '';
-  public dynamicClockMinutes: string = '';
-  public dynamicClockSeconds: string = '';
+  public dynamicClockTime: string = '';
 
   public formDisabled = true;
 
@@ -30,8 +28,6 @@ export class PatientFormHeaderComponent {
     if (parseInt(minutes) < 10) minutes = '0' + minutes;
     if (parseInt(seconds) < 10) seconds = '0' + seconds;
 
-    this.dynamicClockHours = hours;
-    this.dynamicClockMinutes = minutes;
-    this.dynamicClockSeconds = seconds;
+    this.dynamicClockTime = `${hours}:${minutes}:${seconds}`;
   }, 1000);
 }
