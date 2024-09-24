@@ -28,6 +28,10 @@ img {
     &:hover {
       background-color: darken($color: #0099dd, $amount: 5%);
     }
+
+    &:active {
+      background-color: darken($color: #0099dd, $amount: 6.5%);
+    }
   }
 
   &-disabled {

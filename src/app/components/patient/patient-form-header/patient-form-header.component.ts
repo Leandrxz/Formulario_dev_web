@@ -8,9 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './patient-form-header.component.scss',
 })
 export class PatientFormHeaderComponent {
-  dynamicClockHours: string = '';
-  dynamicClockMinutes: string = '';
-  dynamicClockSeconds: string = '';
+  public dynamicClockHours: string = '';
+  public dynamicClockMinutes: string = '';
+  public dynamicClockSeconds: string = '';
+
+  public formDisabled = true;
 
   /**
    * This function creates a dynamic digital clock to be displayed in the form's header section
